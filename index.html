@@ -2,8 +2,10 @@
 <html lang="en" ng-app="myList">
 <head >
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>Angular App</title>
+	<link href="img/angular.ico" rel="shortcut icon">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="css/xeditable.css" rel="stylesheet">
 
@@ -14,10 +16,12 @@
 <body ng-controller="listController">
 	<div class="container">
 		<div class="row">
-			
+			<div class="col-sm-12">
+				<h2 class="text-center title animated fadeInDown">Angular Userlist App</h2>
+			</div>
 			<div class="col-sm-8">
 
-				<table class="table table-striped table-bordered">
+				<table class="table table-striped table-bordered animated fadeInLeft">
   					<tr>
 						<th>Name</th>
 						<th>Gender</th>
@@ -55,7 +59,7 @@
 				</table>
 			</div>
 			<div class="col-sm-4">
-				<div class="new-row">
+				<div class="new-row animated fadeInRight">
 				<div class="form-group">
 				    <label for="">Name</label>
 				    <input type="text" class="form-control" id="" placeholder="Name" ng-model="name">
